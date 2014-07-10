@@ -38,6 +38,6 @@
   },
   "scripts": {
     "postinstall": "bower cache clean && bower install",
-    "start": "gulp serve"
+    "start": "gulp build"
   }
 }
