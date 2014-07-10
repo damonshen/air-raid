@@ -1,8 +1,15 @@
 extends layout
 
 block content
-  .fb-login-button(data-show-faces='false' data-auto-logout-link='true')
-  .ui.input
-    input(type='text')
-    input(type='text')
-    input(type='text')
+  .ui.piled.segment
+    #header Air raid
+      .fb-login-button(data-show-faces='false' data-auto-logout-link='true')
+    .form.ui
+      .field
+        .ui.label.red target id
+        .ui.input
+          input(type='text' name='t-url')
+      .field
+        .ui.label.red message
+        textarea(name='msg')
+      .ui.red.submit.button fight

@@ -15,10 +15,12 @@ gulp.task('views', function () {
 
 });
 
+var nib = require('nib');
+var jeet = require('jeet');
 gulp.task('styles', function () {
     return gulp.src('app/styles/main.styl')
         .pipe(plumber())
-        .pipe($.stylus())
+        .pipe($.stylus({use: [nib(), jeet()]}))
         .pipe($.autoprefixer('last 1 version'))
         .pipe(gulp.dest('.tmp/styles'))
         .pipe($.size());

@@ -1,69 +1,27 @@
-@import '../bower_components/bootstrap/dist/css/bootstrap.css';
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.container {
+  *zoom: 1;
+  width: auto;
+  max-width: 960px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 10px;
 }
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.container:before,
+.container:after {
+  content: '';
+  display: table;
 }
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header {
-  padding-left: 15px;
-  padding-right: 15px;
+.container:after {
+  clear: both;
 }
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-/* Make the masthead heading the same height as the navigation */
-}
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-/* Main marketing message and sign up button */
-.jumbotron {
+.container #header {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  font-size: 50px;
 }
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-  .header {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .header {
-    margin-bottom: 30px;
-  }
-  .jumbotron {
-    border-bottom: 0;
-  }
+.container #header .fb-login-button {
+  float: right;
 }

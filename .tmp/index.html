@@ -23,11 +23,23 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
-      <div data-show-faces="false" data-auto-logout-link="true" class="fb-login-button"></div>
-      <div class="ui input">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+      <div class="ui piled segment">
+        <div id="header">Air raid
+          <div data-show-faces="false" data-auto-logout-link="true" class="fb-login-button"></div>
+        </div>
+        <div class="form ui">
+          <div class="field">
+            <div class="ui label red">target id</div>
+            <div class="ui input">
+              <input type="text" name="t-url">
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui label red">message</div>
+            <textarea name="msg"></textarea>
+          </div>
+          <div class="ui red submit button">fight</div>
+        </div>
       </div>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
