@@ -37,7 +37,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "postinstall": "bower cache clean && bower install",
-    "start": "gulp build"
+    "postinstall": "bower cache clean && bower install && gulp build",
+    "start": "gulp connect"
   }
 }
